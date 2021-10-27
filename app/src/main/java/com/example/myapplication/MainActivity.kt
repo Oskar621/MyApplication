@@ -10,19 +10,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var tekst1 = " "
-        var wynik = " "
-        var tekst2 = " "
-        findViewById<Button>(R.id.Dodajnapis).setOnClickListener {
-            findViewById<TextView>(R.id.textView).text = findViewById<TextInputLayout>(R.id.poletekst1).toString()
-        }
-        findViewById<Button>(R.id.Przywroc).setOnClickListener {
 
-        }
         findViewById<Button>(R.id.ZapiszTekst).setOnClickListener {
-            findViewById<TextView>(R.id.textView).text = find
-            findViewById<TextInputLayout>(R.id.poletekst1).text = ""
+            findViewById<TextInputLayout>(R.id.poletekst2).text = findViewById<TextView>(R.id.textView).ToString()
         }
-    }
     }
 }

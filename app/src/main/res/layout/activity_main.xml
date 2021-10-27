@@ -10,7 +10,6 @@
         android:id="@+id/textView"
         android:layout_width="425dp"
         android:layout_height="64dp"
-        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -54,16 +53,17 @@
         app:layout_constraintVertical_bias="0.679" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_width="412dp"
+        android:layout_height="61dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/poletekst2"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:hint="hint" />
+            android:layout_height="62dp"
+            android:hint="Tu napisz tekst" />
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
