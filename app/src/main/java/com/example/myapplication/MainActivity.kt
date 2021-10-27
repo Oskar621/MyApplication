@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.ZapiszTekst).setOnClickListener {
-            findViewById<TextInputLayout>(R.id.poletekst2).text = findViewById<TextView>(R.id.textView).ToString()
+            findViewById<TextView>(R.id.textView).text = findViewById<TextInputLayout>(R.id.poletekst2).text
         }
     }
 }
