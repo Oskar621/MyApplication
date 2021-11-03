@@ -22,6 +22,11 @@ class MainActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.DoWysw).text =
                 findViewById<TextView>(R.id.DoWysw).text.toString() + findViewById<TextInputEditText>(R.id.poletekst2).text.toString()
         }
-
+        findViewById<Button>(R.id.SumaLiczb).setOnClickListener {
+            liczbaPierwsza = findViewById<TextInputEditText>(R.id.DoLiczb1).text.toString().toInt()
+            liczbaDruga = findViewById<TextInputEditText>(R.id.DoLiczb2).text.toString().toInt()
+            suma = liczbaPierwsza + liczbaDruga
+            findViewById<TextView>(R.id.DoWysw).text = liczbaPierwsza.toString()+ "+" + liczbaDruga + "=" + suma.toString()
+        }
     }
 }
